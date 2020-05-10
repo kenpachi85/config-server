@@ -1,0 +1,26 @@
+
+
+#repository solution
+#spring:
+#  cloud:
+#    config:
+#      server:
+#        encrypt.enabled: false
+#        git:
+#          uri: https://github.com/carnellj/config-repo/
+#          searchPaths: licensingservice,organizationservice
+#          username: native-cloud-apps
+#          password: 0ffended
+
+#Classpath and file-based solution
+spring:  profiles:
+    active: native  cloud:
+    config:
+      server:
+        native:
+          searchLocations: classpath:config/,classpath:config/licensingservice
+         
+          #file://D:/programacion/workspaceSTS/confsrv/src/main/resources/config/licensingservice,
+#                             classpath: config/,classpath:config/licensingservice          
+  
+  
